@@ -1,0 +1,48 @@
+@import url('https://cdn.jsdelivr.net/npm/galmuri@latest/dist/galmuri.css');
+
+/* Galmuri11을 사용하려면
+font-family: 'Galmuri11';
+
+Galmuri11 Bold를 사용하려면
+font-family: 'Galmuri11';
+font-weight: 700;
+
+Galmuri11 Condensed를 사용하려면
+font-family: 'Galmuri11';
+font-stretch: condensed;
+
+Galmuri9을 사용하려면
+font-family: 'Galmuri9';
+
+Galmuri7을 사용하려면
+font-family: 'Galmuri7'; */
+
+body{
+  font-family: 'Galmuri11';
+  font-weight: 500;
+  color: #222222;
+  background-color: #d9d9d9;
+}
+
+.container{
+  width: 1080px;
+  height: 720px;
+
+  background: #FFFFFF;
+  border: 1px solid #222222;
+  box-shadow: 4px 4px 0px #222222;
+  box-sizing: border-box;
+  
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+a{
+  text-decoration: none;
+  color: #222222;
+}
+

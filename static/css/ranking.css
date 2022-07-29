@@ -1,0 +1,132 @@
+@import url("./main.css");
+.container{
+  display: flex;
+  flex-direction: column;
+}
+nav{
+  width: 100%;
+  height: 60px;
+  border-bottom: 2px solid #222222;;
+
+  padding: 10px 20px 10px 20px;
+  box-sizing: border-box;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  font-family: 'Galmuri9';
+  font-weight: 400;
+}
+nav div a{
+  margin-right: 30px;
+}
+.menu{
+  display: flex;
+}
+a{
+  text-decoration: none;
+  color: #222222;
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+}
+.nav_icon{
+  width: 22px;
+  margin-right: 2px;
+}
+
+.maintitle a{
+  font-weight: 500;
+  text-shadow: -2px 0 #d9d9d9, 0 2px #d9d9d9, 2px 0 #d9d9d9, 0 -2px #d9d9d9;
+  font-size: 20px;
+  margin-left: 20px;
+}
+.box{
+  width: 100%;
+  height: 660px;
+  padding: 30px;
+  padding-top: 0px;
+}
+
+.home_icon{
+  position: absolute;
+}
+
+.podium_icon{
+  width: 900px;
+  height: 500px;
+  margin: auto;
+  margin-top: 0px;
+}
+
+.goldmedal {
+    width: 120px;
+    height: 120px;
+    position: absolute;
+    top: 40px;
+    left: 255px;
+}
+
+.silvermedal {
+    width: 120px;
+    height: 120px;
+    position: absolute;
+    top: 80px;
+    left: 140px;
+}
+
+.bronzemedal {
+    width: 120px;
+    height: 120px;
+    position: absolute;
+    top: 120px;
+    left: 370px;
+    
+}
+
+.gold_tooltip{
+    position: absolute;
+    width: 200px;
+    background-color: #d9d9d9;
+    color: #222222;
+    text-align: center;
+    top: 90px;
+    left: 310px;
+}
+
+.silver_tooltip{
+    position: absolute;
+    width: 200px;
+    background-color: #d9d9d9;
+    color: #222222;
+    text-align: center;
+    top: 190px;
+    left: 60px;
+}
+
+.bronze_tooltip{
+    position: absolute;
+    width: 200px;
+    background-color: #d9d9d9;
+    color: #222222;
+    text-align: center;
+    top: 260px;
+    left: 860px;
+}
+
+.ranking_board{
+    position: absolute;
+    top: 490px;
+    left: 160px;
+    overflow: scroll;
+    height: 150px;
+    width: 800px;
+    background-color: #d9d9d9;
+}
+
+.rank{
+    padding: 10px;
+    font-weight: bold;
+    font-size: large;
+}

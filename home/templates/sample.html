@@ -1,0 +1,25 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="{% static 'css/index.css' %}">
+  <!-- <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script> -->
+  <script defer src="{% static 'js/index.js' %}"></script>
+</head>
+<body>
+  <div class="container">
+    <div class="subtext">
+      <p class="1">알고 계셨나요?<br>기상청의 강수 예보 일치 확률은 50%를 넘지 않습니다.</p>
+      <p class="2">알고 계셨나요?<br>기상청은 여름과 겨울 날씨를 제일 많이 틀립니다.</p>
+      <p class="3">알고 계셨나요?<br>사람의 무릎은 생각보다 날씨를 잘 맞힙니다.</p>
+    </div>
+    <img class="mainicon" src="{% static 'image/main_icon.gif' %}" alt=""/>
+    <div class="subtitle">기상청을 이겨라!</div>
+    <div class="maintitle">기상천외</div>
+  </div>
+</body>
+</html>

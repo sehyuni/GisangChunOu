@@ -1,0 +1,73 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  {% load static %}
+  <script defer src="{% static 'js/home_mem.js' %}"></script>
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+  <link rel="stylesheet" href="{% static 'css/home.css' %}">
+</head>
+<body>
+  <div class="container">
+    <nav>
+      <div class="maintitle"><a href="/home/">기상천외 </a></div>
+      <div class="answer">{% if weather %}{{ weather }} is selected...{% endif %}</div>
+
+      <div class="menu">
+        <a href="/mypage/"><img class="nav_icon" src="{% static 'image/mypage.png' %}" alt="">마이페이지</a>
+        <a href="/ranking/"><img class="nav_icon" src="{% static 'image/rank.png' %}" alt="">랭킹보기</a>
+      </div>
+    </nav>
+    <div class="box">
+
+      <section class="sec1">
+        <div class="bar">
+          <div class="blood">기상청</div>
+        </div>
+        <button class="dateminus">-</button>
+        <div class="date">07.28{{data.weather}}</div>
+        <button class="dateplus">+</button>
+        <div class="bar">
+          <div class="blood">유저</div>
+        </div>
+      </section>
+
+      <section class="sec1-2">
+        <select name="time" id="time">
+          <option value="morning">출근길</option>
+          <option value="day">일할때</option>
+          <option value="dinner">퇴근길</option>
+          <option value="night">야식땡길때</option>
+        </select>
+        <div class="subtext">날씨는?</div>
+        <form class="weather_form" method="post" action="{% url 'forecast' %}">
+          {% csrf_token %}
+          <label><input type="radio" name="weather" value="sunny">맑은</label>
+          <label><input type="radio" name="weather" value="rainny">비오는</label>
+          <label><input type="radio" name="weather" value="snow">눈오는</label>
+          <input class="weather_btn" type="submit" value="날씨일 거에요!">
+        </form>
+
+      </section>
+
+      <section class="sec2">
+        <div class="server" style="background-image:url({% static 'image/rainy.gif' %})">
+          <img class="home_icon" src="{% static 'image/server_icon.gif' %}" alt="">
+          <!-- <div class="result win">WIN</div> -->
+          <div class="charname">기상청</div>
+        </div>
+        <div class="vs">VS</div>
+        <div class="user" style="background-image: none">
+          <img class="home_icon" src="{% static 'image/main_icon.gif' %}" alt="">
+          <div class="charname">유저</div>
+          <div class="result govote">예상 날씨는 ?!</div>
+        </div>
+      </section>
+    </div>
+  </div>
+</body>
+</html>

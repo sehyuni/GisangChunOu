@@ -1,0 +1,77 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="{% static 'css/mypage.css' %}">
+</head>
+<body>
+  <div class="container">
+    <nav>
+      <div class="maintitle"><a href="/home/">기상천외</a></div>
+      <div class="menu">
+        <a href="/mypage/"><img class="nav_icon" src="{% static 'image/mypage.png' %}" alt=""><b>마이페이지</b></a>
+        <a href="/ranking/"><img class="nav_icon" src="{% static 'image/rank.png' %}" alt="">랭킹보기</a>
+      </div>
+    </nav>
+    <div class="box">
+      <section class="userbox">
+        <div class="profile">
+          <img src="{% static 'image/userimage2.png' %}" alt="">
+          <div class="name"><span class="info_title">닉네임</span>무릎팍도사</div>
+          <div class="tool"><span class="info_title">날씨예측기준</span>무릎</div>
+        </div>
+        <div class="myinfo">
+          <div class="maininfo"><span>무릎팍도사</span>는 <span>무릎</span>으로 10번 중 <span>4번</span>을 성공했습니다!</div>
+          <div class="info subinfo">
+            <div><span class="info_title">시도횟수</span>20번</div>
+            <div><span class="info_title">성공횟수</span>8번</div>
+          </div>
+          <div class="info"><span class="info_title">내 순위</span>아직 순위 밖입니다. 이 기상과 이 맘으로 노력하시길</div>
+          <div class="info"><span class="info_title">내 레벨</span>날씨 요정</div>
+        </div>
+      </section>
+      <section class="databox">
+        <table>
+          <caption><span>최근 5회 나의 예측</span></caption>
+          <thead>
+            <tr>
+              <th>일시</th>
+              <th>내 예측</th>
+              <th>실제 날씨</th>
+            </tr>
+          </thead>
+          <tr>
+            <td>7/11 출근길</td>
+            <td>비</td>
+            <td>맑음</td>
+          </tr>
+          <tr>
+            <td>7/13 야식땡길때</td>
+            <td>비</td>
+            <td>비</td>
+          </tr>
+          <tr>
+            <td>7/15 일할때</td>
+            <td>맑음</td>
+            <td>맑음</td>
+          </tr>
+          <tr>
+            <td>7/17 퇴근길</td>
+            <td>맑음</td>
+            <td>비</td>
+          </tr>
+          <tr>
+            <td>7/21 출근길</td>
+            <td>비</td>
+            <td>맑음</td>
+          </tr>
+        </table>
+      </section>
+    </div>
+  </div>
+</body>
+</html>

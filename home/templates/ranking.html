@@ -1,0 +1,61 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="{% static 'css/ranking.css' %}">
+</head>
+<body>
+  <div class="container">
+    <nav>
+      <div class="maintitle"><a href="/home/">기상천외</a></div>
+      <div class="menu">
+        <a href="/mypage/"><img class="nav_icon" src="{% static 'image/mypage.png' %}" alt="">마이페이지</a>
+        <a href="/ranking/"><img class="nav_icon" src="{% static 'image/rank.png' %}" alt=""><b>랭킹보기</b></a>
+      </div>
+    </nav>
+    <div class="box">
+        <div class="podium_icon">
+            <img class="podium_icon" src="{% static 'image/podium2.png' %}">
+        </div>
+
+        <div class="goldmedal">
+            <img class="goldmedal" src="{% static 'image/goldmedal.gif' %}">
+        </div>
+        <div class="gold_tooltip">
+            <p>1위 기상레이더 ▶</p>
+        </div>
+
+        <div class="silvermedal">
+            <img class="silvermedal" src="{% static 'image/silvermedal.gif' %}">
+        </div>
+        <div class="silver_tooltip">
+            <p>2위 기상레이더 ▶</p>
+        </div>
+
+        <div class="bronzemedal">
+            <img class="bronzemedal" src="{% static 'image/bronzemedal.gif' %}">
+        </div>
+        <div class="bronze_tooltip">
+            <p>◀ 3위 기상레이더</p>
+        </div>
+
+        <div class="ranking_board">
+            <div class="rank">1위: 기상레이더님은 배고픔으로 10번 중 9번을 성공했습니다.</div>
+            <div class="rank">2위: 기상레이더님은 배고픔으로 10번 중 9번을 성공했습니다.</div>
+            <div class="rank">3위: 기상레이더님은 배고픔으로 10번 중 9번을 성공했습니다.</div>
+            <div class="rank">4위: 기상레이더님은 배고픔으로 10번 중 9번을 성공했습니다.</div>
+            <div class="rank">5위: 기상레이더님은 배고픔으로 10번 중 9번을 성공했습니다.</div>
+            <div class="rank">6위: 기상레이더님은 배고픔으로 10번 중 9번을 성공했습니다.</div>
+            <div class="rank">7위: 기상레이더님은 배고픔으로 10번 중 9번을 성공했습니다.</div>
+            <div class="rank">8위: 기상레이더님은 배고픔으로 10번 중 9번을 성공했습니다.</div>
+            <div class="rank">9위: 기상레이더님은 배고픔으로 10번 중 9번을 성공했습니다.</div>
+            <div class="rank">10위: 기상레이더님은 배고픔으로 10번 중 9번을 성공했습니다.</div>
+        </div>
+    </div>
+  </div>
+</body>
+</html>

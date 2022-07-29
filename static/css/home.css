@@ -1,0 +1,217 @@
+@import url("./main.css");
+.container{
+  display: flex;
+  flex-direction: column;
+}
+
+nav{
+  width: 100%;
+  height: 60px;
+  border-bottom: 2px solid #222222;;
+
+  padding: 10px 20px 10px 20px;
+  box-sizing: border-box;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  font-family: 'Galmuri9';
+  font-weight: 400;
+}
+nav div a{
+  margin-right: 30px;
+}
+.menu{
+  display: flex;
+}
+a{
+  text-decoration: none;
+  color: #222222;
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+}
+.nav_icon{
+  width: 22px;
+  margin-right: 2px;
+}
+
+.maintitle a{
+  font-weight: 500;
+  text-shadow: -2px 0 #d9d9d9, 0 2px #d9d9d9, 2px 0 #d9d9d9, 0 -2px #d9d9d9;
+  font-size: 20px;
+  margin-left: 20px;
+}
+.box{
+  width: 100%;
+  height: 660px;
+  padding: 30px;
+  box-sizing: border-box;
+
+  display: flex;
+  flex-direction: column;
+}
+.sec1{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  margin-bottom: 10px;
+}
+
+.bar{
+  width: 400px;
+  height: 30px;
+  background-color: #8b8b8b;
+  padding: 5px;
+  box-sizing: border-box;
+}
+
+.bar:nth-child(1) .blood{
+  width: 80%;
+  height: 100%;
+  background-color: yellow;
+}
+
+.bar:last-child .blood{
+  width: 50%;
+  height: 100%;
+  background-color: yellow;
+}
+
+.date{
+  font-family: 'Galmuri9';
+  font-weight: 700;
+  font-size: 32px;
+  -webkit-text-stroke-width: 1px;
+	-webkit-text-stroke-color: #222222;
+}
+
+.dateminus, .dateplus{
+  font-family: 'Galmuri9';
+  font-weight: 700;
+  font-size: 15px;
+}
+
+.sec1-2{
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+select{
+  display: block;
+  padding: 10px;
+  font-family: 'Galmuri11';
+  color: #222222;
+  margin-right: 10px;
+}
+
+.weather_form{
+  /* margin-top: 5px; */
+  margin-left: 10px;
+  display:flex;
+  align-items: center;
+}
+
+.weather_form input{
+  accent-color: yellow;
+}
+
+.weather_form label{
+  margin-right: 10px;
+}
+
+.weather_btn{
+  margin-left: 10px;
+  font-family: 'Galmuri11';
+  padding: 10px;
+  cursor: pointer;
+}
+
+.sec2{
+  display: flex;
+  padding: 10px;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.server,
+.user{
+  width: 480px;
+  height: 520px;
+  box-sizing: border-box;
+  background-size: contain;
+  background-repeat: no-repeat;
+
+  position: relative;
+}
+
+.vs{
+  font-family: 'Galmuri11';
+  font-style: bold;
+  font-weight: 700;
+  font-size: 100px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 350px;
+  margin: auto;
+  width: max-content;
+  height: max-content;
+  -webkit-text-stroke-width: 3px;
+	-webkit-text-stroke-color: #d9d9d9;
+
+  z-index: 100;
+}
+
+.server .home_icon{
+  width: 200px;
+  bottom: 140px;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+.user .home_icon{
+  width: 300px;
+  bottom: 110px;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+.home_icon{
+  position: absolute;
+}
+
+.result{
+  font-size: 50px;
+  text-align: center;
+  padding: 20px;
+  font-weight: 700
+}
+
+.result.win{
+  color: #557bff;
+  -webkit-text-stroke-width: 1px;
+	-webkit-text-stroke-color: #ffffff;
+}
+.result.lose{
+  color: #ff5555;
+  -webkit-text-stroke-width: 1px;
+	-webkit-text-stroke-color: #ffffff;
+}
+
+.charname{
+  font-size: 30px;
+  text-align: center;
+  padding: 20px;
+  font-weight: 700;
+  color: #ffffff;
+  -webkit-text-stroke-width: 1px;
+	-webkit-text-stroke-color: #222222;
+  text-shadow: 3px 3px 0px #222222;
+}

@@ -1,0 +1,65 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="{% static 'css/newmember.css' %}">
+</head>
+<body>
+  <div class="container">
+    
+    <div class="loginbox">
+        <img class="imglogo" src="{% static 'image/main_icon.gif' %}">
+        <div class="textlogo"><a onclick="location.href='/home/'" style="cursor:pointer">기상천외</a></div>
+        <div class="content">
+            <!--ID-->
+            <div class="content">
+                아이디
+            </div>
+            <div class="box">
+                <input type="text" id="id" maxlength="20">
+            </div>
+
+            <!--PW1-->
+            <div class="content">
+                비밀번호
+            </div>
+            <div class="box">
+                <input type="password" maxlength="20">
+            </div>
+            
+            <!--PW2-->
+            <div class="content">
+                비밀번호 재확인
+            </div>
+            <div class="box">
+                <input type="password" maxlength="20">
+            </div>
+
+            <!--닉네임-->
+            <div class="content"> 
+                닉네임
+            </div>
+            <div class="box">
+                <input type="text" placeholder="변경 불가능. 신중하게 선택해 주세요!" id="id" maxlength="20">
+            </div>
+
+            <!--weather-->
+            <div class="content">
+                날씨 선택 기준
+            </div>
+            <div class="box">
+                <input type="text" placeholder="변경 불가능. 신중하게 선택해 주세요!" id="id" maxlength="20">
+            </div>
+            <div class="box">
+                <button id="join">시작하기</button>
+            </div>
+        </div>
+    </div>   
+    
+  </div>
+</body>
+</html>

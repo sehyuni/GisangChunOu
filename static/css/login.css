@@ -1,0 +1,88 @@
+@import url("../static/main.css");
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loginbox {
+    width: 500px;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* border: 1px solid lightgrey;
+    border-radius: 5px; */
+}
+
+.textlogo {
+    margin-top: 0px;
+    margin-bottom: 40px;
+    font-weight: 800;
+    text-shadow: -3px 0 #d9d9d9, 0 3px #d9d9d9, 3px 0 #d9d9d9, 0 -3px #d9d9d9;
+    font-family: 'Galmuri9';
+    font-size: 30px;
+}
+
+.imglogo{
+    width: 150px;
+}
+
+
+.account {
+    display: block;
+    margin-bottom: 5px;
+    padding: 7px;
+    border: 1px solid lightgray;
+    background-color: #d9d9d9;
+    box-shadow: inset 2px 2px 0px #222222;
+    font-family: 'Galmuri9';
+}
+
+.box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#login {
+    display: block;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    font-family: 'Galmuri11';
+    width: 100px;
+    height: 40px;
+    background-color: #747474;
+    border-color: transparent;
+    color: #ffffff;
+}
+
+#login:hover{
+    background-color: #222222;
+}
+
+#new{
+    display: block;
+    border-color: transparent;
+    background-color: transparent;
+    font-family: 'Galmuri11';
+    font-weight: 400;
+    font-size: large;
+}
+
+#new:hover{
+    text-decoration: underline;
+}
+
+input{
+    width: 300px;
+    height: 40px;
+    text-align: center;
+}
+
+button{
+    cursor: pointer;
+}

@@ -1,0 +1,60 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="{% static 'css/home.css' %}">
+</head>
+<body>
+  <div class="container">
+    <nav>
+      <div class="maintitle"><a href="/home/">기상천외</a></div>
+      <div class="menu">
+        <a href="/login/"><img class="nav_icon" src="{% static 'image/login.png' %}" alt="" style="width:60px; margin-top:2px;">나도참여</a>
+        <a href="/ranking/"><img class="nav_icon" src="{% static 'image/rank.png' %}" alt="">랭킹보기</a>
+      </div>
+    </nav>
+    <div class="box">
+
+      <section class="sec1">
+        <div class="bar">
+          <div class="blood">기상청</div>
+        </div>
+        <button class="dateminus">-</button>
+        <div class="date">07.23</div>
+        <button class="dateplus">+</button>
+        <div class="bar">
+          <div class="blood">유저</div>
+        </div>
+      </section>
+
+      <section class="sec1-2">
+        <select name="time" id="time">
+          <option value="morning">출근길</option>
+          <option value="day">일할때</option>
+          <option value="dinner">퇴근길</option>
+          <option value="night">야식땡길때</option>
+        </select>
+        <div class="subtext">에는 비가 왔습니다.</div>
+      </section>
+
+      <section class="sec2">
+        <div class="server" style="background-image:url({% static 'image/rainy.gif' %});">
+          <img class="home_icon" src="{% static 'image/server_icon.gif' %}" alt="">
+          <div class="result win">WIN</div>
+          <div class="charname">기상청</div>
+        </div>
+        <div class="vs">VS</div>
+        <div class="user" style="background-image: url({% static 'image/sunny.gif' %});">
+          <img class="home_icon" src="{% static 'image/sunny_icon.gif' %}" alt="">
+          <div class="result lose">LOSE</div>
+          <div class="charname">유저</div>
+        </div>
+      </section>
+    </div>
+  </div>
+</body>
+</html>
